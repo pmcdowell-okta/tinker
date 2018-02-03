@@ -2,7 +2,7 @@ package tinker
 
 import "fmt"
 
-func pointlesstest() {
+func Pointlesstest() {
 
 	fmt.Println("works")
 
