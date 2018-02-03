@@ -1,4 +1,4 @@
-package pointlesspackage
+package tinker
 
 import "fmt"
 
