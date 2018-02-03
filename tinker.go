@@ -4,7 +4,7 @@ import "fmt"
 
 func Pointlesstest() {
 
-	fmt.Println("works")
+	fmt.Println("works, and you can update packages too !")
 
 } 
 
