@@ -1,20 +1,20 @@
 setup:
-        echo "nothing to setup"
+	echo "nothing to setup"
 
 build:
-        go build run.go
-        bash -c ./run&
-        ../githubcheck $$github
-        make stop
+	go build run.go
+	bash -c ./run&
+	../githubcheck $$github
+	make stop
 
 run:
-        bash -c ./run
+	bash -c ./run
 
 stop:
-        killall run
+	killall run
 
 cc:
-        echo $$github
+	echo $$github
 
 
  
