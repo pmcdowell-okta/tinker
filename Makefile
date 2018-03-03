@@ -8,7 +8,7 @@ build:
 	echo "Finished build"
 
 launch:
-	sudo screen -d -m make launch
+	sudo screen -d -m ./run
 
 run:
 	bash -c ./run
