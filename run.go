@@ -1,13 +1,17 @@
 package main
 
-import ("fmt"
-	"time"
+import (
+    "fmt"
+    "net/http"
 )
 
-func main() {
-	for true {
-		fmt.Println("hi")
-		time.Sleep(1 * time.Second)
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there!")
+}
 
-	}
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":80", nil) //non ssl
+// 	http.ListenAndServeTLS(":443", "cert.pem", "key.pem", nil) //ssl
+
 }
