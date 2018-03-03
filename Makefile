@@ -4,7 +4,7 @@ setup:
 build:
 	@killall run || true
 	go build run.go
-	nohup ./run
+	nohup ./run &
 	
 
 run:
