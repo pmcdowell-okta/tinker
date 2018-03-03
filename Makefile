@@ -2,7 +2,7 @@ setup:
 	echo "nothing to setup"
 
 build:
-	killall run
+	@killall run || true
 	go build run.go
 	bash -c ./run&
 	
