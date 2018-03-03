@@ -9,3 +9,9 @@ ssh -i /Users/patrickmcdowell/Box\ Sync/amazonec1.pem  ubuntu@ec2-52-23-192-159.
 echo "Launching!"
 ssh -i /Users/patrickmcdowell/Box\ Sync/amazonec1.pem  ubuntu@ec2-52-23-192-159.compute-1.amazonaws.com "cd github; cd *;sudo screen -d -m make launch; echo done"
 echo "done"
+
+## argggh hard to get this to launch sometimes...
+#this seems to work now.
+
+ ssh -i /Users/patrickmcdowell/Box\ Sync/amazonec1.pem  ubuntu@ec2-52-23-192-159.compute-1.amazonaws.com "sudo killall run;cd github; cd *;ls;sudo make launch & "
+ 
