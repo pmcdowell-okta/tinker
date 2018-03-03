@@ -5,6 +5,7 @@ build:
 	@killall run || true
 	go build run.go
 	#./run &
+	echo "Finished build"
 	
 
 run:
