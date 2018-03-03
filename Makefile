@@ -6,7 +6,9 @@ build:
 	go build run.go
 	#./run &
 	echo "Finished build"
-	
+
+launch:
+	sudo screen -d -m make launch
 
 run:
 	bash -c ./run
